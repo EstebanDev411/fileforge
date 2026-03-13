@@ -1,6 +1,4 @@
 # FileForge
-logs/
-history/
 *.spec
 __pycache__/
 *.pyc
