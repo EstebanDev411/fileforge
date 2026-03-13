@@ -4,3 +4,4 @@ history/
 *.spec
 __pycache__/
 *.pyc
+build/
