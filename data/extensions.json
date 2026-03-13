@@ -1,0 +1,138 @@
+{
+  "Images": [
+    ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".tif", ".webp",
+    ".heic", ".heif", ".ico", ".svg", ".raw", ".cr2", ".cr3", ".nef",
+    ".arw", ".dng", ".orf", ".rw2", ".pef", ".srw", ".avif", ".jxl",
+    ".hdr", ".exr", ".tga", ".pcx", ".ppm", ".pgm", ".pbm", ".xbm"
+  ],
+  "Videos": [
+    ".mp4", ".mkv", ".avi", ".mov", ".wmv", ".flv", ".webm", ".m4v",
+    ".mpg", ".mpeg", ".3gp", ".3g2", ".ogv", ".ts", ".mts", ".m2ts",
+    ".vob", ".divx", ".xvid", ".rm", ".rmvb", ".asf", ".f4v", ".swf",
+    ".mxf", ".roq", ".nsv", ".yuv", ".amv"
+  ],
+  "Music": [
+    ".mp3", ".flac", ".wav", ".aac", ".ogg", ".wma", ".m4a", ".opus",
+    ".aiff", ".aif", ".ape", ".wv", ".mka", ".mid", ".midi", ".mod",
+    ".xm", ".it", ".s3m", ".amr", ".au", ".ra", ".tta", ".ac3", ".dts",
+    ".mpc", ".mp2", ".spx", ".gsm", ".vox", ".dss", ".dvf"
+  ],
+  "Documents": [
+    ".pdf", ".doc", ".docx", ".odt", ".rtf", ".txt", ".tex", ".wps",
+    ".wpd", ".abw", ".pages", ".md", ".rst", ".adoc", ".org",
+    ".docm", ".dotx", ".dotm", ".odf", ".fodp", ".fodt", ".ott"
+  ],
+  "Spreadsheets": [
+    ".xls", ".xlsx", ".ods", ".csv", ".tsv", ".xlsm", ".xlsb", ".xltx",
+    ".xltm", ".fods", ".numbers", ".dbf", ".slk", ".dif"
+  ],
+  "Presentations": [
+    ".ppt", ".pptx", ".odp", ".pps", ".ppsx", ".pptm", ".potx",
+    ".potm", ".key", ".fodp", ".otp"
+  ],
+  "Archives": [
+    ".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".tgz",
+    ".tbz2", ".txz", ".cab", ".iso", ".lz", ".lzma", ".lzo", ".z",
+    ".zst", ".arj", ".ace", ".arc", ".lha", ".lzh", ".sit", ".sitx",
+    ".sea", ".war", ".jar", ".ear", ".apk", ".ipa", ".deb", ".rpm",
+    ".pkg", ".dmg", ".msi"
+  ],
+  "Executables": [
+    ".exe", ".msi", ".bat", ".cmd", ".com", ".scr", ".ps1", ".psm1",
+    ".psd1", ".vbs", ".vbe", ".js", ".jse", ".wsf", ".wsh", ".dll",
+    ".sys", ".drv", ".cpl", ".ocx", ".ax", ".acm", ".tsp"
+  ],
+  "Code": [
+    ".py", ".pyw", ".pyc", ".pyo", ".pyd",
+    ".js", ".mjs", ".cjs", ".jsx", ".ts", ".tsx",
+    ".html", ".htm", ".xhtml", ".css", ".scss", ".sass", ".less",
+    ".c", ".h", ".cpp", ".hpp", ".cc", ".cxx", ".hxx",
+    ".cs", ".java", ".kt", ".kts", ".swift", ".go", ".rs",
+    ".rb", ".php", ".pl", ".pm", ".lua", ".r", ".m",
+    ".sh", ".bash", ".zsh", ".fish", ".ps1",
+    ".sql", ".graphql", ".gql",
+    ".json", ".yaml", ".yml", ".toml", ".ini", ".cfg", ".conf",
+    ".xml", ".xsd", ".dtd", ".xsl", ".xslt",
+    ".vue", ".svelte", ".astro",
+    ".dart", ".ex", ".exs", ".erl", ".hrl",
+    ".hs", ".lhs", ".elm", ".clj", ".cljs", ".scala",
+    ".gradle", ".groovy", ".tf", ".hcl", ".nix"
+  ],
+  "Fonts": [
+    ".ttf", ".otf", ".woff", ".woff2", ".eot", ".fon", ".fnt",
+    ".pfb", ".pfm", ".afm", ".bdf", ".pcf", ".snf", ".dfont",
+    ".suit", ".sfd"
+  ],
+  "3D": [
+    ".obj", ".fbx", ".stl", ".blend", ".3ds", ".dae", ".gltf", ".glb",
+    ".ply", ".x3d", ".wrl", ".vrml", ".c4d", ".ma", ".mb", ".max",
+    ".lwo", ".lws", ".lxo", ".dxf", ".dwg", ".step", ".stp", ".iges",
+    ".igs", ".brep", ".sat", ".3mf", ".amf", ".usd", ".usda", ".usdc"
+  ],
+  "Design": [
+    ".psd", ".psb", ".ai", ".eps", ".indd", ".idml", ".xd", ".fig",
+    ".sketch", ".afdesign", ".afphoto", ".afpub", ".cdr", ".cdrx",
+    ".vsd", ".vsdx", ".graffle", ".drawio", ".excalidraw"
+  ],
+  "Data": [
+    ".db", ".sqlite", ".sqlite3", ".sql", ".mdb", ".accdb",
+    ".json", ".xml", ".csv", ".tsv", ".parquet", ".avro", ".orc",
+    ".hdf5", ".h5", ".nc", ".mat", ".pkl", ".pickle",
+    ".bson", ".cbor", ".msgpack", ".feather", ".arrow"
+  ],
+  "Books": [
+    ".epub", ".mobi", ".azw", ".azw3", ".azw4", ".fb2", ".djvu",
+    ".djv", ".lit", ".lrf", ".pdb", ".prc", ".cbz", ".cbr",
+    ".cb7", ".cbt", ".cba"
+  ],
+  "Torrents": [
+    ".torrent", ".magnet"
+  ],
+  "Subtitles": [
+    ".srt", ".ass", ".ssa", ".sub", ".vtt", ".sbv", ".smi", ".lrc",
+    ".dfxp", ".ttml", ".stl", ".scc", ".cap", ".rt", ".idx"
+  ],
+  "DiskImages": [
+    ".iso", ".img", ".bin", ".cue", ".mdf", ".mds", ".nrg", ".ccd",
+    ".vhd", ".vhdx", ".vmdk", ".vdi", ".qcow", ".qcow2", ".raw",
+    ".toast", ".dmg"
+  ],
+  "Backups": [
+    ".bak", ".backup", ".bkp", ".bk", ".old", ".orig", ".tmp.bak",
+    ".abk", ".fbk", ".gbk", ".ibk", ".mbk", ".nbk", ".obk", ".rbk",
+    ".sbk", ".tbk", ".ubk", ".wbk", ".ybk", ".arc"
+  ],
+  "Temp": [
+    ".tmp", ".temp", ".cache", ".crdownload", ".part", ".partial",
+    ".download", ".!ut", ".ud", ".bc!", ".bc#"
+  ],
+  "Logs": [
+    ".log", ".logs", ".out", ".err", ".trace", ".dump",
+    ".crash", ".dmp", ".evtx", ".etl"
+  ],
+  "Scripts": [
+    ".sh", ".bash", ".zsh", ".fish", ".bat", ".cmd", ".ps1",
+    ".psm1", ".psd1", ".vbs", ".wsf", ".awk", ".sed",
+    ".tcl", ".expect", ".ksh", ".csh", ".dash"
+  ],
+  "VirtualMachines": [
+    ".vmdk", ".vhd", ".vhdx", ".vdi", ".vmx", ".vmxf", ".nvram",
+    ".vmsd", ".vmsn", ".ova", ".ovf", ".qcow", ".qcow2",
+    ".vbox", ".vbox-prev"
+  ],
+  "CAD": [
+    ".dwg", ".dxf", ".dgn", ".dwf", ".rvt", ".rfa", ".ipt", ".iam",
+    ".idw", ".ipn", ".sldprt", ".sldasm", ".slddrw", ".catpart",
+    ".catproduct", ".cgr", ".prt", ".asm", ".drw", ".par", ".psm"
+  ],
+  "GIS": [
+    ".shp", ".shx", ".dbf", ".prj", ".gpx", ".kml", ".kmz",
+    ".geojson", ".topojson", ".osm", ".pbf", ".tif", ".tiff",
+    ".img", ".asc", ".grd", ".nc"
+  ],
+  "Certificates": [
+    ".pem", ".crt", ".cer", ".der", ".p7b", ".p7c", ".p12", ".pfx",
+    ".key", ".csr", ".jks", ".keystore", ".truststore"
+  ],
+  "Other": []
+}

@@ -1,0 +1,108 @@
+{
+  "version": "1.0.0",
+  "app_name": "FileForge",
+  "scan": {
+    "max_depth": -1,
+    "follow_symlinks": false,
+    "skip_hidden": true,
+    "skip_system": true,
+    "max_workers": 0,
+    "skip_directories": [
+      "$RECYCLE.BIN",
+      "System Volume Information",
+      "WindowsApps",
+      ".git",
+      "__pycache__",
+      "node_modules",
+      ".cache"
+    ]
+  },
+  "organize": {
+    "mode": "move",
+    "create_category_folders": true,
+    "handle_conflicts": "rename",
+    "dry_run": false,
+    "output_folder_name": "_Organized"
+  },
+  "duplicates": {
+    "enabled": true,
+    "strategy": "move_to_folder",
+    "duplicates_folder": "_Duplicates",
+    "keep": "newest",
+    "min_size_bytes": 1024
+  },
+  "heuristics": {
+    "screenshots": {
+      "enabled": true,
+      "destination": "Images/Screenshots",
+      "name_patterns": [
+        "screenshot",
+        "captura",
+        "screen shot",
+        "screen_shot",
+        "img_",
+        "capture",
+        "pantalla",
+        "bildschirmfoto",
+        "schermata",
+        "bildschirm"
+      ],
+      "source_folders": [
+        "Downloads",
+        "Desktop",
+        "WhatsApp Images",
+        "Telegram",
+        "Messenger",
+        "OneDrive",
+        "Screenshots"
+      ]
+    },
+    "memes": {
+      "enabled": true,
+      "destination": "Images/Memes",
+      "name_patterns": [
+        "meme",
+        "funny",
+        "lol",
+        "wtf",
+        "lmao",
+        "rofl",
+        "humor",
+        "joke",
+        "jaja",
+        "xd",
+        "kek"
+      ]
+    }
+  },
+  "large_file_thresholds": {
+    "documents": 100,
+    "images": 500,
+    "photoshop": 2000,
+    "videos": 1000,
+    "audio": 200,
+    "archives": 4000,
+    "other": 500
+  },
+  "large_files": {
+    "enabled": true,
+    "destination": "_LargeFiles"
+  },
+  "history": {
+    "max_entries": 500,
+    "enabled": true
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size_mb": 10,
+    "backup_count": 5,
+    "console_output": true
+  },
+  "gui": {
+    "theme": "dark",
+    "language": "en",
+    "window_width": 1280,
+    "window_height": 800,
+    "remember_last_folder": true
+  }
+}
