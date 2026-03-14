@@ -24,9 +24,14 @@ def main() -> None:
     # Bootstrap system layer first (logger + config must be ready)
     from system.logger import setup_logger
     from system.config import Config
+    from system.i18n import I18n
 
     Config.initialize()
     setup_logger()
+
+    # Load translations — use language stored in config
+    lang = Config.get("gui.language", "en")
+    I18n.initialize(lang=lang)
 
     if len(sys.argv) > 1:
         # CLI mode

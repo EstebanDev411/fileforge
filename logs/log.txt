@@ -1,0 +1,14 @@
+[2026-03-14 11:30:07] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:30:07] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=en, total_keys=324
+[2026-03-14 11:30:38] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:30:38] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=es, total_keys=324
+[2026-03-14 11:30:56] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:30:56] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=es, total_keys=324
+[2026-03-14 11:32:38] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:32:38] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=es, total_keys=324
+[2026-03-14 11:32:51] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:32:51] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=en, total_keys=324
+[2026-03-14 11:33:05] [INFO    ] [root] FileForge logger initialized — log: C:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:33:05] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=en, total_keys=324
+[2026-03-14 11:35:16] [INFO    ] [root] FileForge logger initialized — log: c:\Users\USUARIO\Cosas\Coding\python\FileForge\logs\log.txt
+[2026-03-14 11:35:16] [INFO    ] [system.i18n] I18n initialized: 2 languages, active=en, total_keys=324

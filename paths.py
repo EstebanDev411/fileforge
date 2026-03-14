@@ -129,3 +129,10 @@ class Paths:
     def icon() -> Path:
         """App icon .ico file."""
         return Paths.resources() / "icons" / "fileforge.ico"
+
+    @staticmethod
+    def locale() -> Path:
+        """Locale folder containing .xml translation files."""
+        if _is_frozen():
+            return _meipass() / "locale"
+        return _dev_root() / "locale"

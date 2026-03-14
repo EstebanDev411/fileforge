@@ -409,6 +409,65 @@ def cmd_history(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_watch(args: argparse.Namespace) -> int:
+    """fileforge watch <path> [--dest DIR] [--recursive] [--interval N]"""
+    import signal
+    from core.watcher import Watcher, WatchTarget
+
+    _print_header(f"Watcher  →  {args.path}")
+    print(f"  Folder      : {args.path}")
+    print(f"  Destination : {args.dest or '<folder>/_Organized'}")
+    print(f"  Recursive   : {args.recursive}")
+    print(f"  Press Ctrl+C to stop\n")
+
+    processed = [0]
+    errors    = [0]
+
+    def on_file(event):
+        processed[0] += 1
+        action = "✓" if event.action != "error" else "✗"
+        name = __import__('pathlib').Path(event.path).name
+        cat  = f" [{event.category}]" if event.category else ""
+        print(f"  {action} {name}{cat}")
+
+    def on_log(msg: str):
+        if not msg.startswith("  "):
+            print(f"  {msg}")
+
+    target = WatchTarget(
+        path=args.path,
+        destination=args.dest or "",
+        recursive=args.recursive,
+    )
+
+    w = Watcher(
+        on_file=on_file,
+        on_log=on_log,
+        poll_interval=args.interval,
+    )
+    w.add(target)
+    w.start()
+
+    print(f"  Backend: {w.backend}")
+    print(f"  Watching for new files…\n")
+
+    def _stop(sig, frame):
+        print(f"\n\n  Stopping watcher…")
+        w.stop()
+        print(f"  Files organized : {processed[0]:,}")
+        print(f"  Errors          : {errors[0]:,}")
+
+    signal.signal(signal.SIGINT, _stop)
+
+    try:
+        while w.is_running:
+            __import__('time').sleep(1)
+    except SystemExit:
+        pass
+
+    return 0
+
+
 def cmd_undo(args: argparse.Namespace) -> int:
     """fileforge undo <entry_id>"""
     from system.history import History
@@ -525,6 +584,16 @@ def _build_parser() -> argparse.ArgumentParser:
     p_auto.add_argument("--dry-run", action="store_true",
                         help="Preview without making changes")
 
+    # ── watch ──────────────────────────────────────────────────────────
+    p_watch = sub.add_parser("watch", help="Watch a folder and auto-organize new files")
+    p_watch.add_argument("path", help="Folder to monitor")
+    p_watch.add_argument("--dest", default=None,
+                         help="Destination root (default: <path>/_Organized)")
+    p_watch.add_argument("--recursive", action="store_true",
+                         help="Watch subfolders too")
+    p_watch.add_argument("--interval", type=int, default=5,
+                         help="Poll interval in seconds (default: 5)")
+
     # ── history ───────────────────────────────────────────────────────────
     p_hist = sub.add_parser("history", help="View operation history")
     p_hist.add_argument("--last", type=int, default=20,
@@ -550,6 +619,7 @@ _COMMANDS = {
     "organize": cmd_organize,
     "dupes":    cmd_dupes,
     "auto":     cmd_auto,
+    "watch":    cmd_watch,
     "history":  cmd_history,
     "undo":     cmd_undo,
 }

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang code="es" name="Español">
+
+  <!-- ── Página watcher ───────────────────────── -->
+  <group id="watcher">
+    <key id="title">Vigilante</key>
+    <key id="subtitle">Monitoriza carpetas y organiza archivos nuevos en el momento que aparecen</key>
+    <key id="watch_label">Carpeta a vigilar</key>
+    <key id="dest_label">Organizar en</key>
+    <key id="dest_placeholder">Vacío → &lt;carpeta&gt;/_Organized</key>
+    <key id="recursive_check">Incluir subcarpetas</key>
+    <key id="btn_add">＋  Añadir destino</key>
+    <key id="targets_group">Carpetas vigiladas</key>
+    <key id="col_folder">Carpeta</key>
+    <key id="col_dest">Destino</key>
+    <key id="col_recursive">Recursivo</key>
+    <key id="btn_remove">Eliminar</key>
+    <key id="stat_processed">Archivos organizados</key>
+    <key id="stat_errors">Errores</key>
+    <key id="stat_backend">Motor</key>
+    <key id="btn_start">▶  Iniciar vigilancia</key>
+    <key id="btn_stop">■  Detener</key>
+    <key id="status_idle">⬤  Inactivo</key>
+    <key id="status_watching">⬤  Vigilando</key>
+    <key id="log_label">Registro de actividad</key>
+    <key id="warn_no_folder">Añade al menos una carpeta para vigilar.</key>
+    <key id="warn_no_path">Selecciona una carpeta para vigilar.</key>
+    <key id="warn_not_exist">La carpeta no existe:\n{path}</key>
+    <key id="added">Añadida: {path}</key>
+    <key id="removed">Eliminada: {path}</key>
+  </group>
+
+  <!-- ── Barra lateral ──────────────────────── -->
+  <group id="sidebar">
+    <key id="title">FileForge</key>
+    <key id="version">v1.1.0 — Organizador de Archivos</key>
+    <key id="footer">100% local\nSin internet</key>
+    <key id="nav_scan">Escanear</key>
+    <key id="nav_organize">Organizar</key>
+    <key id="nav_dupes">Duplicados</key>
+    <key id="nav_auto">Auto</key>
+    <key id="nav_history">Historial</key>
+    <key id="nav_settings">Ajustes</key>
+  </group>
+
+  <!-- ── Página escanear ─────────────────────── -->
+  <group id="scan">
+    <key id="title">Escanear</key>
+    <key id="subtitle">Escanea cualquier carpeta y ve estadísticas de archivos</key>
+    <key id="source_label">Carpeta de origen</key>
+    <key id="btn_start">▶  Iniciar Escaneo</key>
+    <key id="btn_cancel">■  Cancelar</key>
+    <key id="scanning">Escaneando…</key>
+    <key id="no_files">No se encontraron archivos.</key>
+    <key id="stat_files">Archivos encontrados</key>
+    <key id="stat_size">Tamaño total</key>
+    <key id="stat_cats">Categorías</key>
+    <key id="table_category">Categoría</key>
+    <key id="table_files">Archivos</key>
+    <key id="table_size">Tamaño</key>
+    <key id="log_label">Registro</key>
+    <key id="warn_no_path">Por favor selecciona una carpeta primero.</key>
+    <key id="cancelled">Escaneo cancelado por el usuario</key>
+    <key id="complete">Escaneo completo: {files} archivos, {size} GB, {cats} categorías</key>
+  </group>
+
+  <!-- ── Página organizar ─────────────────────── -->
+  <group id="organize">
+    <key id="title">Organizar</key>
+    <key id="subtitle">Clasifica archivos por tipo y muévelos a una carpeta estructurada</key>
+    <key id="source_label">Carpeta de origen</key>
+    <key id="dest_label">Carpeta de destino</key>
+    <key id="dest_placeholder">Vacío = usar &lt;origen&gt;/_Organized</key>
+    <key id="mode_label">Modo</key>
+    <key id="conflict_label">Conflicto</key>
+    <key id="dryrun_check">Simulación (vista previa — no se mueven archivos)</key>
+    <key id="stat_loaded">Archivos cargados</key>
+    <key id="stat_organized">Organizados</key>
+    <key id="stat_errors">Errores</key>
+    <key id="btn_organize">▶  Organizar ahora</key>
+    <key id="btn_cancel">■  Cancelar</key>
+    <key id="warn_no_source">Selecciona una carpeta de origen o carga archivos desde Escanear.</key>
+    <key id="done">Listo{dryrun}: {count} archivos organizados, {errors} errores</key>
+    <key id="dryrun_label"> (simulación)</key>
+  </group>
+
+  <!-- ── Página duplicados ──────────────────── -->
+  <group id="dupes">
+    <key id="title">Duplicados</key>
+    <key id="subtitle">Encuentra duplicados exactos usando SHA-256</key>
+    <key id="folder_label">Carpeta a revisar</key>
+    <key id="strategy_label">Estrategia</key>
+    <key id="keep_label">Conservar</key>
+    <key id="dest_label">Carpeta de duplicados</key>
+    <key id="dest_placeholder">Por defecto: origen/_Duplicates</key>
+    <key id="stat_groups">Grupos</key>
+    <key id="stat_dupes">Archivos dup.</key>
+    <key id="stat_wasted">Espacio perdido</key>
+    <key id="btn_find">🔍  Buscar Duplicados</key>
+    <key id="btn_resolve">⚡  Resolver</key>
+    <key id="btn_cancel">■  Cancelar</key>
+    <key id="scanning">Escaneando: {path}</key>
+    <key id="hashing">archivos — calculando hashes…</key>
+    <key id="no_dupes">No se encontraron duplicados ✓</key>
+    <key id="table_hash">Hash</key>
+    <key id="table_files">Archivos</key>
+    <key id="table_wasted">MB perdidos</key>
+    <key id="table_sample">Ejemplo</key>
+    <key id="dryrun_msg">SIMULACIÓN — no se realizaron cambios.</key>
+    <key id="confirm_delete_title">Confirmar eliminación</key>
+    <key id="confirm_delete_msg">Se eliminarán permanentemente {count} archivos duplicados.\n\nEsto no se puede deshacer. ¿Continuar?</key>
+    <key id="resolved">Resuelto: {processed} duplicados, {freed} MB liberados</key>
+    <key id="warn_no_path">Selecciona una carpeta primero.</key>
+  </group>
+
+  <!-- ── Página auto ────────────────────────── -->
+  <group id="auto">
+    <key id="title">Organización Automática</key>
+    <key id="subtitle">Un clic: escanear → clasificar → heurísticas → duplicados → organizar</key>
+    <key id="source_label">Carpeta de origen</key>
+    <key id="dest_label">Carpeta de destino</key>
+    <key id="dest_placeholder">Vacío → &lt;origen&gt;/_Organized</key>
+    <key id="dryrun_check">Simulación (vista previa sin mover archivos)</key>
+    <key id="btn_start">⚡  Organización Automática</key>
+    <key id="btn_cancel">■  Cancelar</key>
+    <key id="stat_total">Total archivos</key>
+    <key id="stat_organized">Organizados</key>
+    <key id="stat_dupes">Grupos dup.</key>
+    <key id="stat_freed">Espacio liberado</key>
+    <key id="stage_starting">Iniciando…</key>
+    <key id="stage_complete">Completado{dryrun} ✓</key>
+    <key id="stage_error">Error ✗</key>
+    <key id="dryrun_label"> (simulación)</key>
+    <key id="warn_no_path">Selecciona una carpeta de origen.</key>
+  </group>
+
+  <!-- ── Página historial ───────────────────── -->
+  <group id="history">
+    <key id="title">Historial</key>
+    <key id="subtitle">Todas las operaciones de FileForge con soporte de deshacer</key>
+    <key id="btn_refresh">↻  Actualizar</key>
+    <key id="btn_clear">🗑  Borrar historial</key>
+    <key id="col_date">Fecha</key>
+    <key id="col_action">Acción</key>
+    <key id="col_files">Archivos</key>
+    <key id="col_errors">Errores</key>
+    <key id="col_source">Origen</key>
+    <key id="btn_undo">Deshacer</key>
+    <key id="confirm_undo_title">Deshacer operación</key>
+    <key id="confirm_undo_msg">Los archivos volverán a su ubicación original.\n¿Continuar?</key>
+    <key id="undo_success">Se revirtieron {count} archivos correctamente.</key>
+    <key id="undo_errors">Se revirtieron {count} archivos. {errors} errores.</key>
+    <key id="confirm_clear_title">Borrar historial</key>
+    <key id="confirm_clear_msg">¿Eliminar todas las entradas del historial? Tus archivos no serán afectados.</key>
+  </group>
+
+  <!-- ── Página ajustes ────────────────────── -->
+  <group id="settings">
+    <key id="title">Ajustes</key>
+    <key id="subtitle">Configura el comportamiento de FileForge</key>
+    <key id="tab_general">General</key>
+    <key id="tab_dupes">Duplicados</key>
+    <key id="tab_sizes">Archivos grandes</key>
+    <key id="tab_heuristics">Heurísticas</key>
+    <key id="tab_language">Idioma</key>
+    <key id="btn_save">💾  Guardar</key>
+    <key id="btn_reload">↻  Recargar desde disco</key>
+    <key id="saved_ok">Ajustes guardados correctamente.</key>
+    <!-- Pestaña general -->
+    <key id="mode_label">Modo de organización</key>
+    <key id="conflict_label">Gestión de conflictos</key>
+    <key id="depth_label">Profundidad máxima (-1 = ilimitado)</key>
+    <key id="hidden_check">Omitir archivos y carpetas ocultos</key>
+    <!-- Pestaña duplicados -->
+    <key id="dupes_enabled_check">Activar detección de duplicados</key>
+    <key id="dupes_strategy_label">Estrategia por defecto</key>
+    <key id="dupes_keep_label">Conservar</key>
+    <key id="dupes_minsize_label">Tamaño mínimo (bytes)</key>
+    <!-- Pestaña tamaños -->
+    <key id="sizes_cat_col">Categoría</key>
+    <key id="sizes_threshold_col">Umbral (MB)</key>
+    <!-- Pestaña heurísticas -->
+    <key id="heuristics_ss_check">Activar detección de capturas de pantalla</key>
+    <key id="heuristics_meme_check">Activar detección de memes</key>
+    <key id="heuristics_lf_check">Activar detección de archivos grandes</key>
+    <key id="heuristics_ss_patterns">Patrones de captura (separados por coma):</key>
+    <key id="heuristics_meme_patterns">Patrones de meme (separados por coma):</key>
+    <!-- Pestaña idioma -->
+    <key id="language_label">Idioma de la interfaz</key>
+    <key id="language_restart_note">Reinicia la aplicación para aplicar el nuevo idioma.</key>
+  </group>
+
+  <!-- ── Común / compartido ──────────────────── -->
+  <group id="common">
+    <key id="btn_browse">Examinar…</key>
+    <key id="btn_clear_field">✕</key>
+    <key id="yes">Sí</key>
+    <key id="no">No</key>
+    <key id="ok">Aceptar</key>
+    <key id="cancel">Cancelar</key>
+    <key id="error_prefix">Error: </key>
+    <key id="fatal_error">ERROR FATAL</key>
+    <key id="check_logs">Revisa logs/log.txt para más detalles.</key>
+    <key id="status_ready">FileForge  ·  {page}  ·  Listo</key>
+  </group>
+
+</lang>

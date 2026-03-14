@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lang code="en" name="English">
+
+  <!-- ── Watcher page ───────────────────────── -->
+  <group id="watcher">
+    <key id="title">Watcher</key>
+    <key id="subtitle">Monitor folders and auto-organize new files the moment they appear</key>
+    <key id="watch_label">Watch folder</key>
+    <key id="dest_label">Organize into</key>
+    <key id="dest_placeholder">Leave empty → &lt;watch&gt;/_Organized</key>
+    <key id="recursive_check">Include subfolders</key>
+    <key id="btn_add">＋  Add target</key>
+    <key id="targets_group">Watched folders</key>
+    <key id="col_folder">Folder</key>
+    <key id="col_dest">Destination</key>
+    <key id="col_recursive">Recursive</key>
+    <key id="btn_remove">Remove</key>
+    <key id="stat_processed">Files organized</key>
+    <key id="stat_errors">Errors</key>
+    <key id="stat_backend">Backend</key>
+    <key id="btn_start">▶  Start Watching</key>
+    <key id="btn_stop">■  Stop</key>
+    <key id="status_idle">⬤  Idle</key>
+    <key id="status_watching">⬤  Watching</key>
+    <key id="log_label">Activity log</key>
+    <key id="warn_no_folder">Add at least one folder to watch first.</key>
+    <key id="warn_no_path">Select a folder to watch.</key>
+    <key id="warn_not_exist">Folder does not exist:\n{path}</key>
+    <key id="added">Added: {path}</key>
+    <key id="removed">Removed: {path}</key>
+  </group>
+
+  <!-- ── Sidebar ─────────────────────────────── -->
+  <group id="sidebar">
+    <key id="title">FileForge</key>
+    <key id="version">v1.1.0 — Professional File Organizer</key>
+    <key id="footer">100% local\nNo internet required</key>
+    <key id="nav_scan">Scan</key>
+    <key id="nav_organize">Organize</key>
+    <key id="nav_dupes">Duplicates</key>
+    <key id="nav_auto">Auto</key>
+    <key id="nav_history">History</key>
+    <key id="nav_settings">Settings</key>
+  </group>
+
+  <!-- ── Scan page ───────────────────────────── -->
+  <group id="scan">
+    <key id="title">Scan</key>
+    <key id="subtitle">Scan any folder and view file statistics</key>
+    <key id="source_label">Source folder</key>
+    <key id="btn_start">▶  Start Scan</key>
+    <key id="btn_cancel">■  Cancel</key>
+    <key id="scanning">Scanning…</key>
+    <key id="no_files">No files found.</key>
+    <key id="stat_files">Files found</key>
+    <key id="stat_size">Total size</key>
+    <key id="stat_cats">Categories</key>
+    <key id="table_category">Category</key>
+    <key id="table_files">Files</key>
+    <key id="table_size">Size</key>
+    <key id="log_label">Log</key>
+    <key id="warn_no_path">Please select a folder first.</key>
+    <key id="cancelled">Scan cancelled by user</key>
+    <key id="complete">Scan complete: {files} files, {size} GB, {cats} categories</key>
+  </group>
+
+  <!-- ── Organize page ───────────────────────── -->
+  <group id="organize">
+    <key id="title">Organize</key>
+    <key id="subtitle">Classify files by type and move them into a structured folder</key>
+    <key id="source_label">Source folder</key>
+    <key id="dest_label">Destination folder</key>
+    <key id="dest_placeholder">Leave empty to use &lt;source&gt;/_Organized</key>
+    <key id="mode_label">Mode</key>
+    <key id="conflict_label">Conflict</key>
+    <key id="dryrun_check">Dry-run (preview only — no files moved)</key>
+    <key id="stat_loaded">Files loaded</key>
+    <key id="stat_organized">Organized</key>
+    <key id="stat_errors">Errors</key>
+    <key id="btn_organize">▶  Organize Now</key>
+    <key id="btn_cancel">■  Cancel</key>
+    <key id="warn_no_source">Select a source folder or load files from the Scan page.</key>
+    <key id="done">Done{dryrun}: {count} files organized, {errors} errors</key>
+    <key id="dryrun_label"> (dry-run)</key>
+  </group>
+
+  <!-- ── Duplicates page ─────────────────────── -->
+  <group id="dupes">
+    <key id="title">Duplicates</key>
+    <key id="subtitle">Find exact duplicates using SHA-256 hashing</key>
+    <key id="folder_label">Folder to check</key>
+    <key id="strategy_label">Strategy</key>
+    <key id="keep_label">Keep</key>
+    <key id="dest_label">Duplicates folder</key>
+    <key id="dest_placeholder">Default: source/_Duplicates</key>
+    <key id="stat_groups">Groups</key>
+    <key id="stat_dupes">Dup files</key>
+    <key id="stat_wasted">Space wasted</key>
+    <key id="btn_find">🔍  Find Duplicates</key>
+    <key id="btn_resolve">⚡  Resolve</key>
+    <key id="btn_cancel">■  Cancel</key>
+    <key id="scanning">Scanning: {path}</key>
+    <key id="hashing">files — hashing…</key>
+    <key id="no_dupes">No duplicates found ✓</key>
+    <key id="table_hash">Hash</key>
+    <key id="table_files">Files</key>
+    <key id="table_wasted">Wasted MB</key>
+    <key id="table_sample">Sample</key>
+    <key id="dryrun_msg">DRY-RUN — no changes made.</key>
+    <key id="confirm_delete_title">Confirm Delete</key>
+    <key id="confirm_delete_msg">This will permanently delete {count} duplicate files.\n\nThis cannot be undone. Continue?</key>
+    <key id="resolved">Resolved: {processed} duplicates, {freed} MB freed</key>
+    <key id="warn_no_path">Select a folder first.</key>
+  </group>
+
+  <!-- ── Auto page ───────────────────────────── -->
+  <group id="auto">
+    <key id="title">Smart Auto Organize</key>
+    <key id="subtitle">One click: scan → classify → heuristics → duplicates → organize</key>
+    <key id="source_label">Source folder</key>
+    <key id="dest_label">Destination folder</key>
+    <key id="dest_placeholder">Leave empty → &lt;source&gt;/_Organized</key>
+    <key id="dryrun_check">Dry-run (preview without moving files)</key>
+    <key id="btn_start">⚡  Smart Auto Organize</key>
+    <key id="btn_cancel">■  Cancel</key>
+    <key id="stat_total">Total files</key>
+    <key id="stat_organized">Organized</key>
+    <key id="stat_dupes">Dup groups</key>
+    <key id="stat_freed">Space freed</key>
+    <key id="stage_starting">Starting…</key>
+    <key id="stage_complete">Complete{dryrun} ✓</key>
+    <key id="stage_error">Error ✗</key>
+    <key id="dryrun_label"> (dry-run)</key>
+    <key id="warn_no_path">Select a source folder.</key>
+  </group>
+
+  <!-- ── History page ────────────────────────── -->
+  <group id="history">
+    <key id="title">History</key>
+    <key id="subtitle">All FileForge operations with undo support</key>
+    <key id="btn_refresh">↻  Refresh</key>
+    <key id="btn_clear">🗑  Clear History</key>
+    <key id="col_date">Date</key>
+    <key id="col_action">Action</key>
+    <key id="col_files">Files</key>
+    <key id="col_errors">Errors</key>
+    <key id="col_source">Source</key>
+    <key id="btn_undo">Undo</key>
+    <key id="confirm_undo_title">Undo operation</key>
+    <key id="confirm_undo_msg">This will move files back to their original locations.\nContinue?</key>
+    <key id="undo_success">Successfully reversed {count} files.</key>
+    <key id="undo_errors">Reversed {count} files. {errors} errors.</key>
+    <key id="confirm_clear_title">Clear History</key>
+    <key id="confirm_clear_msg">Delete all history entries? This does not affect your files.</key>
+  </group>
+
+  <!-- ── Settings page ───────────────────────── -->
+  <group id="settings">
+    <key id="title">Settings</key>
+    <key id="subtitle">Configure FileForge behaviour</key>
+    <key id="tab_general">General</key>
+    <key id="tab_dupes">Duplicates</key>
+    <key id="tab_sizes">Large Files</key>
+    <key id="tab_heuristics">Heuristics</key>
+    <key id="tab_language">Language</key>
+    <key id="btn_save">💾  Save</key>
+    <key id="btn_reload">↻  Reload from disk</key>
+    <key id="saved_ok">Settings saved successfully.</key>
+    <!-- General tab -->
+    <key id="mode_label">Organize mode</key>
+    <key id="conflict_label">Conflict handling</key>
+    <key id="depth_label">Max scan depth (-1 = unlimited)</key>
+    <key id="hidden_check">Skip hidden files and folders</key>
+    <!-- Duplicates tab -->
+    <key id="dupes_enabled_check">Enable duplicate detection</key>
+    <key id="dupes_strategy_label">Default strategy</key>
+    <key id="dupes_keep_label">Keep</key>
+    <key id="dupes_minsize_label">Min file size (bytes)</key>
+    <!-- Sizes tab -->
+    <key id="sizes_cat_col">Category</key>
+    <key id="sizes_threshold_col">Threshold (MB)</key>
+    <!-- Heuristics tab -->
+    <key id="heuristics_ss_check">Enable screenshot detection</key>
+    <key id="heuristics_meme_check">Enable meme detection</key>
+    <key id="heuristics_lf_check">Enable large file detection</key>
+    <key id="heuristics_ss_patterns">Screenshot name patterns (comma-separated):</key>
+    <key id="heuristics_meme_patterns">Meme name patterns (comma-separated):</key>
+    <!-- Language tab -->
+    <key id="language_label">Interface language</key>
+    <key id="language_restart_note">Restart the app to apply the new language.</key>
+  </group>
+
+  <!-- ── Common / shared ─────────────────────── -->
+  <group id="common">
+    <key id="btn_browse">Browse…</key>
+    <key id="btn_clear_field">✕</key>
+    <key id="yes">Yes</key>
+    <key id="no">No</key>
+    <key id="ok">OK</key>
+    <key id="cancel">Cancel</key>
+    <key id="error_prefix">Error: </key>
+    <key id="fatal_error">FATAL ERROR</key>
+    <key id="check_logs">Check logs/log.txt for details.</key>
+    <key id="status_ready">FileForge  ·  {page}  ·  Ready</key>
+  </group>
+
+</lang>
